@@ -1,6 +1,6 @@
 import sys
 import logging
-from matizla import ui
+from matizla import core
 
 logging.basicConfig(
     stream=sys.stdout,
@@ -11,7 +11,7 @@ _LOGGER = logging.getLogger(__name__)
 
 def main():
     _LOGGER.info("Starting matizla...")
-    ui.start()
+    core.run()
 
 if __name__ == "__main__":
     sys.exit(main())
