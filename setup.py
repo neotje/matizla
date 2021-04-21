@@ -10,9 +10,6 @@ PACKAGES = find_packages()
 
 REQUIRED = [
     "pywebview==3.4",
-    "pywebview[qt]==3.4",
-    "pyqt5==5.15.4",
-    "pyqtwebengine==5.15.4",
     "pycairo==1.20.0",
     "PyGObject==3.40.1"
 ]
