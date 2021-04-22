@@ -11,7 +11,8 @@ PACKAGES = find_packages()
 REQUIRED = [
     "pywebview==3.4",
     "pycairo==1.20.0",
-    "PyGObject==3.40.1"
+    "PyGObject==3.40.1",
+    "Flask==1.1.2"
 ]
 
 setup(
