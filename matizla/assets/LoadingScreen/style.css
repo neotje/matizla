@@ -1,5 +1,9 @@
+:root {
+    --mult: 2;
+}
+
 body {
-    background: #ECF0F1;
+    background: #ecf0f100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,26 +28,26 @@ body {
     height: 40%;
     position: absolute;
     border-radius: 50%;
-    animation: spin 2s ease infinite
+    animation: spin calc(var(--mult) * 2s) ease infinite
 }
 
 .load :first-child {
-    background: #19A68C;
-    animation-delay: -1.5s
+    background: #85E05B;
+    animation-delay: calc(var(--mult) * -1.5s)
 }
 
 .load :nth-child(2) {
-    background: #F63D3A;
-    animation-delay: -1s
+    background: #FA5353;
+    animation-delay: calc(var(--mult) * -1s)
 }
 
 .load :nth-child(3) {
-    background: #FDA543;
-    animation-delay: -0.5s
+    background: #fddb43;
+    animation-delay: calc(var(--mult) * -0.5s)
 }
 
 .load :last-child {
-    background: #193B48
+    background: #5753FA
 }
 
 @keyframes spin {
@@ -70,7 +74,6 @@ body {
     height: 12px;
     width: 500px;
     overflow: hidden;
-    margin-top: 48px;
 }
 
 .progress-bar span {
@@ -80,5 +83,10 @@ body {
 .progress-bar .bar {
     background-color: lightgray;
     width: 100%;
+    height: 100%;
+}
+
+.progress-bar .progress {
+    background-color: #19A68C;
     height: 100%;
 }
