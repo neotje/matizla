@@ -10,6 +10,6 @@ python3 __main__.py
 
 with installation
 ```
-pip3 install -e .
+script/setup
 matizla
 ```
